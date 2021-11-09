@@ -1,0 +1,197 @@
+.dashboard-content {
+    .left-side {
+        background-color: $white;
+        margin-top: 30px;
+        padding: 30px 25px;
+
+        h2 {
+            font-size: 24px;
+        }
+
+        .radios {
+            margin-bottom: 15px;
+            margin-top: 15px;
+
+            .form-check-input:checked {
+                background-color: $primary-color;
+                border-color: $primary-color;
+            }
+
+            .form-check-input:focus {
+                box-shadow: 0 0 0 transparent;
+            }
+        }
+
+        .input-area {
+            margin-bottom: 15px;
+            position: relative;
+
+            > i {
+                display: inline-block;
+                text-align: center;
+                line-height: 44px;
+                position: absolute;
+                top: 32px;
+                right: 0;
+                width: 76px;
+                height: 42px;
+                background-color: #E5E5EA;
+                color: #8E8E93;
+                z-index: 9;
+            }
+
+            .nice-select {
+                position: relative;
+                height: 44px;
+                margin-bottom: 15px;
+                border-radius: 0;
+                border-color: #E5E5EA;
+                padding-left: 12px;
+                z-index: 1;
+            }
+
+            label {
+                font-size: 16px;
+            }
+
+            input {
+                height: 44px;
+                border-radius: 0 !important;
+                border-color: #E5E5EA;
+            }
+        }
+
+        .details {
+            p {
+                font-size: 16px;
+                color: #939393;
+            }
+
+            ul {
+                li {
+                    font-size: 16px;
+                    color: #231F20;
+                    line-height: 24px;
+                    margin-bottom: 10px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    hr {
+                        width: 100%;
+                        padding: 0;
+                        margin: 0;
+                        background-color: #E5E5EA;
+                    }
+
+                    &.total {
+                        font-size: 20px;
+                    }
+
+                    &.vat {
+                        color: #5B8DEF;
+                    }
+                }
+            }
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            height: 48px;
+            background-color: $primary-color;
+            color: $white;
+            font-weight: 600;
+            border: 0;
+            font-size: 16px;
+            margin-top: 30px;
+        }
+    }
+
+    .right-side {
+        background-color: $white;
+        margin-top: 30px;
+        padding: 30px 25px;
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        .item {
+            display: flex;
+            border-bottom: 1px solid #E5E5EA;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+
+            &:last-child {
+                border-bottom: 1px solid transparent;
+            }
+
+            .img {
+                width: 160px;
+            }
+
+            .text {
+                width: calc(100% - 160px);
+                padding: 0 15px;
+
+                .title {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .token {
+                        font-size: 12px;
+                        color: #8E8E93;
+                    }
+    
+                    h3 {
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+
+                    .price {
+                        margin-bottom: 0;
+                        font-size: 34px;
+                        color: #5B8DEF;
+                        font-weight: 600;
+                        white-space: nowrap;
+                    }
+                }
+
+                p {
+                    font-size: 12px;
+                    line-height: 18px;
+                    color: #8E8E93;
+                    font-weight: 300;
+                }
+
+                ul {
+                    margin-bottom: 20px;
+
+                    li {
+                        font-size: 12px;
+                        color: #555770;
+                        margin-bottom: 4px;
+                    }
+                }
+
+                .btn-area {
+                    text-align: right;
+
+                    a {
+                        display: inline-block;
+                        width: 170px;
+                        height: 40px;
+                        line-height: 40px;
+                        text-align: center;
+                        color: #8E8E93;
+                        font-size: 14px;
+                        font-weight: 300;
+                        border: 1px solid #E5E5EA;
+                    }
+                }
+            }
+        }
+    }
+}

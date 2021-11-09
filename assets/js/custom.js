@@ -24,12 +24,6 @@ $(document).ready(function() {
 
    })
 
-   $('.dashboard-content .tab-menu-content ul li').on('click', function() {
-    //    $('.dashboard-content .slider').slick('refresh');
-    // $('.dashboard-content .slider').slick('setPosition');
-    // $('.dashboard-content .slider').slick("slickSetOption", "draggable", true, true);    
-    // $('.dashboard-content .slider').resize()
-    // $('.dashboard-content .slider').slick('reinit')
-   })
+   $('.nice-select').niceSelect();
 
 });
