@@ -58,6 +58,10 @@
                 height: 44px;
                 border-radius: 0 !important;
                 border-color: #E5E5EA;
+
+                &:focus {
+                    border-color: $primary-color;
+                }
             }
         }
 
@@ -104,6 +108,37 @@
             border: 0;
             font-size: 16px;
             margin-top: 30px;
+        }
+
+        .coupon {
+            display: flex;
+            padding-top: 10px;
+
+            input {
+                height: 44px;
+                width: calc(100% - 88px);
+                border: 1px solid #E5E5EA;
+                padding: 0 10px;
+
+                &::placeholder {
+                    color: #E5E5EA;
+                }
+
+                &:focus {
+                    border-color: $primary-color;
+                }
+            }
+
+            a {
+                width: 88px;
+                height: 44px;
+                background-color: $primary-color;
+                color: $white;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 44px;
+                text-align: center;
+            }
         }
     }
 

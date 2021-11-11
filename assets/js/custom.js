@@ -51,6 +51,15 @@ $(document).ready(function() {
 
     $('.dashboard-content .tab-content .content .top .btn-area span.dots').on('click', function() {
         $(this).children('a').fadeToggle();
+    });
+
+
+    $('.dashboard-content .tab-content .title .search form input').on('focus', function() {
+        $(this).parents('form').addClass('active');
+    })
+
+    $('.dashboard-content .tab-content .title .search form input').on('blur', function() {
+        $(this).parents('form').removeClass('active');
     })
 
 });
