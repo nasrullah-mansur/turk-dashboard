@@ -41,11 +41,7 @@
                         <span>العربية</span>
                     </a>
                 </div>
-                <div class="mobile-btn">
-                    <span class="mobile-toggler">
-                        <i class="fas fa-bars"></i>
-                    </span>
-                </div>
+                
                 <div class="right-btns">
                     <div href="javascript:void(0);" class="notification active">
                         <img src="assets/images/notification.svg" alt="notification">
@@ -68,6 +64,12 @@
                             </ul>
                         </div>
                     </div>
+                </div>
+
+                <div class="mobile-btn">
+                    <span class="mobile-toggler">
+                        <i class="fas fa-bars"></i>
+                    </span>
                 </div>
             </div>
         </div>
@@ -154,7 +156,10 @@
                                     <div class="btn-area">
                                         <a href="#" class="hide-offer">Hide Offers</a>
                                         <a href="#" class="details">Shipment Details</a>
-                                        <a href="#" class="dots"><i class="las la-ellipsis-v"></i></a>
+                                        <span class="dots">
+                                            <i class="las la-ellipsis-v"></i>
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#cancel-shipment">Cancel Shipment</a>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
@@ -458,7 +463,6 @@
                                     <div class="btn-area">
                                         <a href="#" class="hide-offer">Hide Offers</a>
                                         <a href="#" class="details">Shipment Details</a>
-                                        <a href="#" class="dots"><i class="las la-ellipsis-v"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -610,7 +614,6 @@
                                     <div class="btn-area">
                                         <a href="#" class="hide-offer">Hide Offers</a>
                                         <a href="#" class="details">Shipment Details</a>
-                                        <a href="#" class="dots"><i class="las la-ellipsis-v"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -761,8 +764,8 @@
                                     </div>
                                     <div class="btn-area">
                                         <a href="#" class="hide-offer">Hide Offers</a>
+                                        <a href="#" class="ratting" data-bs-toggle="modal" data-bs-target="#ratting-modal">Rate Transporter</a>
                                         <a href="#" class="details">Shipment Details</a>
-                                        <a href="#" class="dots"><i class="las la-ellipsis-v"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -913,8 +916,8 @@
                                     </div>
                                     <div class="btn-area">
                                         <a href="#" class="hide-offer">Hide Offers</a>
+                                        <a href="#" class="ratting" data-bs-toggle="modal" data-bs-target="#ratting-modal">Rate Transporter</a>
                                         <a href="#" class="details">Shipment Details</a>
-                                        <a href="#" class="dots"><i class="las la-ellipsis-v"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -1019,6 +1022,8 @@
         </div>
     </main>
 
+    <div style="height: 50px;"></div>
+
     <!-- More details modal start -->
     <div class="modal fade custom-modal" id="more-details" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered custom-width">
@@ -1082,6 +1087,115 @@
         </div>
       </div>
     <!-- More details modal end -->
+
+    <!-- Ratting modal start -->
+    <div class="modal fade custom-modal" id="ratting-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered custom-width ratting-modal">
+          <div class="modal-content">
+            <h2>Rate Your Experience</h2>
+            <p>Let Us Know If You're Satisfied With Transporter</p>
+            <form>
+                <div class="ratting">
+                    <label class="active">
+                        <i class="fas fa-star"></i>
+                        <input type="radio" value="1">
+                    </label>
+                    <label class="active">
+                        <i class="fas fa-star"></i>
+                        <input type="radio" value="2">
+                    </label>
+                    <label class="active">
+                        <i class="fas fa-star"></i>
+                        <input type="radio" value="3">
+                    </label>
+                    <label class="active">
+                        <i class="fas fa-star"></i>
+                        <input type="radio" value="4">
+                    </label>
+                    <label>
+                        <i class="far fa-star"></i>
+                        <input type="radio" value="5">
+                    </label>
+                    
+                </div>
+                <textarea placeholder="Describe your experience..."></textarea>
+                <div class="ratting-btn-area">
+                    <a href="#" class="cancel" data-bs-dismiss="modal">Cancel</a>
+                    <button type="submit" class="accept" href="#">Send</button>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    <!-- Ratting modal end -->
+
+    <!-- Cancel shipment start -->
+    <div class="modal fade custom-modal" id="cancel-shipment" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered custom-width cancel-shipment">
+          <div class="modal-content">
+            <img src="assets/images/sorry.svg" alt="img">
+            <h3>We are sorry to see you go without having the chance to serve you.</h3>
+            <p>Due to banks regulation the refund period to your card is 5-15 working days depending on your card issuer.</p>
+            <p class="warning">
+                <img src="assets/images/warning.svg" alt="img">
+                <span>If the shipment canceled 12 hours before the shipping, 50 SAR will be deducted.</span>
+            </p>
+            <div class="shipment-btn">
+                <a href="#"  data-bs-dismiss="modal">Don’t Cancel</a>
+                <a href="#" class="cancel" data-bs-toggle="modal" data-bs-target="#cancel-shipment-request">Cancel Shipment</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Cancel shipment end -->
+
+    <!-- Cancel shipment request start -->
+    <div class="modal fade custom-modal" id="cancel-shipment-request" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered custom-width cancel-shipment-request">
+          <div class="modal-content">
+            <img src="assets/images/warning-tr.svg" alt="img">
+            <h3>Cancel Shipment !</h3>
+            <form>
+                <h4>Cancellation Reason</h4>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="my-group" id="one">
+                    <label class="form-check-label" for="one">
+                        Transporter doesn’t start work.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="my-group" id="two">
+                    <label class="form-check-label" for="two">
+                        The pickup date isn’t right for me.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="my-group" id="three">
+                    <label class="form-check-label" for="three">
+                        I won’t be exist at the pickup time
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="my-group" id="four">
+                    <label class="form-check-label" for="four">
+                        Other
+                    </label>
+                </div>
+                <div class="textarea">
+                    <label for="textarea">Tell us more</label>
+                    <textarea id="textarea" placeholder="tell us changing reason..."></textarea>
+                </div>
+
+                <div class="shipment-request-btn">
+                    <a href="#" data-bs-dismiss="modal">Back</a>
+                    <button href="#" class="request">Request Cancel</button>
+                </div>
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    <!-- Cancel shipment request end -->
 
     <script src="assets/js/jquery.2.2.4.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>

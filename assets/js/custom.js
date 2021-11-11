@@ -26,4 +26,31 @@ $(document).ready(function() {
 
    $('.nice-select').niceSelect();
 
+
+   $('.ratting-modal .ratting input').on('click', function() {
+    let inputVal = $(this).val();
+
+    let allLabel = $('.ratting-modal .ratting label');
+    Array.from(allLabel).forEach( (label) => {
+        let checkInput = label.querySelector('input');
+        let checkIcon = label.querySelector('i').classList;
+
+        if(checkInput.value <= inputVal) {
+            label.classList.add('active');
+            checkIcon.remove('far');
+            checkIcon.add('fas');
+        } else {
+            label.classList.remove('active');
+            checkIcon.remove('fas');
+            checkIcon.add('far');
+        }
+    } )
+
+    })
+
+
+    $('.dashboard-content .tab-content .content .top .btn-area span.dots').on('click', function() {
+        $(this).children('a').fadeToggle();
+    })
+
 });
