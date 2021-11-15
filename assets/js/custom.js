@@ -6,6 +6,18 @@ $(document).ready(function() {
        arrows: false,
    });
 
+   $('.dashboard-header .mobile-btn .notification-toggler').on('click', function(e) {
+       e.preventDefault();
+       $(this).toggleClass('show-notification');
+
+       $('.dashboard-header .mobile-btn .notification').toggle();
+   });
+
+   $('.dashboard-header .mobile-btn .mobile-toggler, .body-overlay').on('click', function() {
+    $('.dashboard-header .mobile-nav').toggle();
+    $('.body-overlay').toggle();
+   })
+
    $('.dashboard-content a.hide-offer').on('click', function(e) {
         e.preventDefault();
         let text = $(this).text();

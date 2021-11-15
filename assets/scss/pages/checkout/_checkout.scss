@@ -274,3 +274,116 @@
         }
     }
 }
+
+.rtl {
+    .dashboard-content {
+        .left-side {
+    
+            .radios {
+
+                .form-check {
+                    .form-check-input {
+                        float: right;
+                    }
+
+                    label {
+                        padding-right: 20px;
+                    }
+                }
+    
+            }
+    
+            .input-area {
+    
+                > i {
+                    top: 36px;
+                    right: auto;
+                    left: 0;
+                }
+    
+                .nice-select {
+                    text-align: right !important;
+                    padding-right: 10px;
+
+                    &::after {
+                        display: none;
+                    }
+
+                    ul {
+                        li {
+                            text-align: right !important;
+                        }
+                    }
+                }
+    
+            }
+    
+            .details {
+    
+                ul {
+                    li {
+                        flex-direction: row-reverse;
+                    }
+                }
+            }
+    
+    
+            .coupon {
+                flex-direction: row-reverse;
+            }
+        }
+    
+        // Right side;
+        .right-side {
+            .item {
+                flex-direction: row-reverse;
+    
+                .text {
+    
+                    .title {
+                        flex-direction: row-reverse;
+                    }
+    
+    
+                    ul {
+    
+                        li {
+                            padding-left: 0;
+                            padding-right: 30px;
+    
+                            img {
+                                left: auto;
+                                right: 0;
+                            }
+                        }
+                    }
+    
+                    .btn-area {
+                        text-align: left;
+                    }
+                }
+    
+                @media (max-width: 767.98px) {
+                    flex-direction: column;
+    
+    
+                    .text {
+                        width: 100%;
+                        margin-top: 30px;
+    
+                        .title {
+                            flex-direction: column;
+                            justify-content: flex-start;
+                            align-items: flex-end;
+    
+                            .right {
+                                order: -1;
+                                margin-bottom: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -115,3 +115,19 @@
         }
     }
 }
+
+.rtl {
+    .invoice-page {
+        
+        .right-side {
+            
+            .des {
+                ul {
+                    li {
+                        flex-direction: row-reverse;
+                    }
+                }
+            }
+        }
+    }
+}
