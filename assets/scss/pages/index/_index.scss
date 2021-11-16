@@ -509,6 +509,11 @@
                                 &.accept {
                                     background-color: #39D98A;
                                     color: $white;
+
+                                    &.accepted {
+                                        opacity: .6;
+                                        pointer-events: none;
+                                    }
                                 }
     
                                 &.more {
@@ -576,7 +581,17 @@
                     flex-direction: row-reverse;
                     
                     .text {
-                       
+                       ul {
+                           li {
+                               display: flex;
+                               flex-direction: row-reverse;
+                               align-items: center;
+
+                               span {
+                                   padding-right: 10px;
+                               }
+                           }
+                       }
         
                         .status {
                             right: auto;
@@ -806,6 +821,11 @@
                 &.accept {
                     background-color: #39D98A;
                     color: $white;
+
+                    &.accepted {
+                        opacity: .6;
+                        pointer-events: none;
+                    }
                 }
 
                 &.cancel {
@@ -815,7 +835,7 @@
             }
 
             @media (max-width: 767.98px) {
-                flex-direction: column;
+                flex-direction: column-reverse;
 
                 a {
                     width: 100%;

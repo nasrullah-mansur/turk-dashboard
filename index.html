@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,10 +19,11 @@
     <!-- Main CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body class="dashboard">
-    
+
     <div class="body-overlay"></div>
-    
+
     <!-- Header start -->
     <header class="dashboard-header">
         <div class="container-fluid">
@@ -43,7 +45,7 @@
                         <span>العربية</span>
                     </a>
                 </div>
-                
+
                 <div class="right-btns">
                     <div href="javascript:void(0);" class="notification active">
                         <img src="assets/images/notification.svg" alt="notification">
@@ -51,8 +53,10 @@
                             <div class="triangle"></div>
                             <h4>Notifications</h4>
                             <ul>
-                                <li><a href="#">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</a></li>
-                                <li><a href="#">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</a></li>
+                                <li><a href="#">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                        eirmod tempor</a></li>
+                                <li><a href="#">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                        eirmod tempor</a></li>
                             </ul>
                         </div>
                     </div>
@@ -91,13 +95,20 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="#" class="profile-toggler">
                                     <img src="assets/images/mobile-icon-3.svg" alt="icon">
                                     <span>My Profile</span>
                                     <i class="las la-angle-right"></i>
                                 </a>
                             </li>
                         </ul>
+
+                        <div class="profile">
+                            <ul>
+                                <li><a href="#">View Profile</a></li>
+                                <li><a href="#">Log Out</a></li>
+                            </ul>
+                        </div>
 
                         <div class="notification">
                             <h3>Notifications</h3>
@@ -120,22 +131,28 @@
             <div class="tab-menu-content">
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="pending-tab" data-bs-toggle="tab" data-bs-target="#pending" type="button" role="tab" aria-controls="pending" aria-selected="true">Pending</button>
+                        <button class="nav-link active" id="pending-tab" data-bs-toggle="tab" data-bs-target="#pending"
+                            type="button" role="tab" aria-controls="pending" aria-selected="true">Pending</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="accept-tab" data-bs-toggle="tab" data-bs-target="#accept" type="button" role="tab" aria-controls="accept" aria-selected="false">Accepted</button>
+                        <button class="nav-link" id="accept-tab" data-bs-toggle="tab" data-bs-target="#accept"
+                            type="button" role="tab" aria-controls="accept" aria-selected="false">Accepted</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="progress-tab" data-bs-toggle="tab" data-bs-target="#progress" type="button" role="tab" aria-controls="progress" aria-selected="false">In Progress</button>
+                        <button class="nav-link" id="progress-tab" data-bs-toggle="tab" data-bs-target="#progress"
+                            type="button" role="tab" aria-controls="progress" aria-selected="false">In Progress</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="picked-tab" data-bs-toggle="tab" data-bs-target="#picked" type="button" role="tab" aria-controls="picked" aria-selected="false">Picked Up</button>
+                        <button class="nav-link" id="picked-tab" data-bs-toggle="tab" data-bs-target="#picked"
+                            type="button" role="tab" aria-controls="picked" aria-selected="false">Picked Up</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="delivered-tab" data-bs-toggle="tab" data-bs-target="#delivered" type="button" role="tab" aria-controls="delivered" aria-selected="false">Delivered</button>
+                        <button class="nav-link" id="delivered-tab" data-bs-toggle="tab" data-bs-target="#delivered"
+                            type="button" role="tab" aria-controls="delivered" aria-selected="false">Delivered</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="canceled-tab" data-bs-toggle="tab" data-bs-target="#canceled" type="button" role="tab" aria-controls="canceled" aria-selected="false">Canceled</button>
+                        <button class="nav-link" id="canceled-tab" data-bs-toggle="tab" data-bs-target="#canceled"
+                            type="button" role="tab" aria-controls="canceled" aria-selected="false">Canceled</button>
                     </li>
                 </ul>
             </div>
@@ -179,7 +196,8 @@
                                     <div class="text-content">
                                         <span class="token">#23654897234356</span>
                                         <h4>Toyota Corolla Hybrid</h4>
-                                        <p>Shipment Description, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>
+                                        <p>Shipment Description, Lorem ipsum dolor sit amet, consetetur sadipscing
+                                            elitr, sed diam nonumy</p>
                                         <ul>
                                             <li>
                                                 <i class="las la-arrow-up"></i>
@@ -196,7 +214,8 @@
                                         <a href="#" class="details">Shipment Details</a>
                                         <span class="dots">
                                             <i class="las la-ellipsis-v"></i>
-                                            <a href="#" data-bs-toggle="modal" data-bs-target="#cancel-shipment">Cancel Shipment</a>
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#cancel-shipment">Cancel
+                                                Shipment</a>
                                         </span>
                                     </div>
                                 </div>
@@ -248,7 +267,8 @@
                                         </div>
                                         <div class="btn-area">
                                             <a class="accept" href="#">Accept Offer</a>
-                                            <a href="#" class="more" data-bs-toggle="modal" data-bs-target="#more-details">More Details</a>
+                                            <a href="#" class="more" data-bs-toggle="modal"
+                                                data-bs-target="#more-details-before">More Details</a>
                                         </div>
                                     </li>
                                     <li>
@@ -289,7 +309,8 @@
                                         </div>
                                         <div class="btn-area">
                                             <a class="accept" href="#">Accept Offer</a>
-                                            <a href="#" class="more" data-bs-toggle="modal" data-bs-target="#more-details">More Details</a>
+                                            <a href="#" class="more" data-bs-toggle="modal"
+                                                data-bs-target="#more-details-before">More Details</a>
                                         </div>
                                     </li>
                                 </ul>
@@ -334,7 +355,8 @@
                                         <span class="status">Transporter Will Start Work</span>
                                         <span class="token">#23654897234356</span>
                                         <h4>Toyota Corolla Hybrid</h4>
-                                        <p>Shipment Description, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>
+                                        <p>Shipment Description, Lorem ipsum dolor sit amet, consetetur sadipscing
+                                            elitr, sed diam nonumy</p>
                                         <ul>
                                             <li>
                                                 <i class="las la-arrow-up"></i>
@@ -351,13 +373,14 @@
                                         <a href="#" class="details">Shipment Details</a>
                                         <span class="dots">
                                             <i class="las la-ellipsis-v"></i>
-                                            <a href="#" data-bs-toggle="modal" data-bs-target="#cancel-shipment">Cancel Shipment</a>
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#cancel-shipment">Cancel
+                                                Shipment</a>
                                         </span>
                                     </div>
                                 </div>
                             </div>
                             <div class="list">
-                                
+
                                 <ul>
                                     <li>
                                         <div class="items">
@@ -396,8 +419,9 @@
                                             </div>
                                         </div>
                                         <div class="btn-area">
-                                            <a class="accept" href="#">Accept Offer</a>
-                                            <a href="#" class="more" data-bs-toggle="modal" data-bs-target="#more-details">More Details</a>
+                                            <a class="accept accepted" href="#">Accepted</a>
+                                            <a href="#" class="more" data-bs-toggle="modal"
+                                                data-bs-target="#more-details">More Details</a>
                                         </div>
                                     </li>
                                 </ul>
@@ -442,7 +466,8 @@
                                         <span class="status">Wait To Picked Up</span>
                                         <span class="token">#23654897234356</span>
                                         <h4>Toyota Corolla Hybrid</h4>
-                                        <p>Shipment Description, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>
+                                        <p>Shipment Description, Lorem ipsum dolor sit amet, consetetur sadipscing
+                                            elitr, sed diam nonumy</p>
                                         <ul>
                                             <li>
                                                 <i class="las la-arrow-up"></i>
@@ -461,7 +486,7 @@
                                 </div>
                             </div>
                             <div class="list">
-                                
+
                                 <ul>
                                     <li>
                                         <div class="items">
@@ -500,8 +525,9 @@
                                             </div>
                                         </div>
                                         <div class="btn-area">
-                                            <a class="accept" href="#">Accept Offer</a>
-                                            <a href="#" class="more" data-bs-toggle="modal" data-bs-target="#more-details">More Details</a>
+                                            <a class="accept accepted" href="#">Accepted</a>
+                                            <a href="#" class="more" data-bs-toggle="modal"
+                                                data-bs-target="#more-details">More Details</a>
                                         </div>
                                     </li>
                                 </ul>
@@ -546,7 +572,8 @@
                                         <span class="status">Wait Delivery</span>
                                         <span class="token">#23654897234356</span>
                                         <h4>Toyota Corolla Hybrid</h4>
-                                        <p>Shipment Description, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>
+                                        <p>Shipment Description, Lorem ipsum dolor sit amet, consetetur sadipscing
+                                            elitr, sed diam nonumy</p>
                                         <ul>
                                             <li>
                                                 <i class="las la-arrow-up"></i>
@@ -569,7 +596,7 @@
                                 </div>
                             </div>
                             <div class="list">
-                                
+
                                 <ul>
                                     <li>
                                         <div class="items">
@@ -608,8 +635,9 @@
                                             </div>
                                         </div>
                                         <div class="btn-area">
-                                            <a class="accept" href="#">Accept Offer</a>
-                                            <a href="#" class="more" data-bs-toggle="modal" data-bs-target="#more-details">More Details</a>
+                                            <a class="accept accepted" href="#">Accepted</a>
+                                            <a href="#" class="more" data-bs-toggle="modal"
+                                                data-bs-target="#more-details">More Details</a>
                                         </div>
                                     </li>
                                 </ul>
@@ -654,7 +682,8 @@
                                         <span class="status">Delivered</span>
                                         <span class="token">#23654897234356</span>
                                         <h4>Toyota Corolla Hybrid</h4>
-                                        <p>Shipment Description, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>
+                                        <p>Shipment Description, Lorem ipsum dolor sit amet, consetetur sadipscing
+                                            elitr, sed diam nonumy</p>
                                         <ul>
                                             <li>
                                                 <i class="las la-arrow-up"></i>
@@ -668,13 +697,14 @@
                                     </div>
                                     <div class="btn-area">
                                         <a href="#" class="hide-offer">Hide Offers</a>
-                                        <a href="#" class="ratting" data-bs-toggle="modal" data-bs-target="#ratting-modal">Rate Transporter</a>
+                                        <a href="#" class="ratting" data-bs-toggle="modal"
+                                            data-bs-target="#ratting-modal">Rate Transporter</a>
                                         <a href="#" class="details full-width">Shipment Details</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="list">
-                                
+
                                 <ul>
                                     <li>
                                         <div class="items">
@@ -713,8 +743,9 @@
                                             </div>
                                         </div>
                                         <div class="btn-area">
-                                            <a class="accept" href="#">Accept Offer</a>
-                                            <a href="#" class="more" data-bs-toggle="modal" data-bs-target="#more-details">More Details</a>
+                                            <a class="accept accepted" href="#">Accepted</a>
+                                            <a href="#" class="more" data-bs-toggle="modal"
+                                                data-bs-target="#more-details">More Details</a>
                                         </div>
                                     </li>
                                 </ul>
@@ -759,7 +790,8 @@
                                         <span class="status">Wait To Picked Up</span>
                                         <span class="token">#23654897234356</span>
                                         <h4>Toyota Corolla Hybrid</h4>
-                                        <p>Shipment Description, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>
+                                        <p>Shipment Description, Lorem ipsum dolor sit amet, consetetur sadipscing
+                                            elitr, sed diam nonumy</p>
                                         <ul>
                                             <li>
                                                 <i class="las la-arrow-up"></i>
@@ -773,13 +805,14 @@
                                     </div>
                                     <div class="btn-area">
                                         <a href="#" class="hide-offer">Hide Offers</a>
-                                        <a href="#" class="ratting" data-bs-toggle="modal" data-bs-target="#ratting-modal">Rate Transporter</a>
+                                        <a href="#" class="ratting" data-bs-toggle="modal"
+                                            data-bs-target="#ratting-modal">Rate Transporter</a>
                                         <a href="#" class="details full-width">Shipment Details</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="list">
-                                
+
                                 <ul>
                                     <li>
                                         <div class="items">
@@ -818,8 +851,9 @@
                                             </div>
                                         </div>
                                         <div class="btn-area">
-                                            <a class="accept" href="#">Accept Offer</a>
-                                            <a href="#" class="more" data-bs-toggle="modal" data-bs-target="#more-details">More Details</a>
+                                            <a class="accept accepted" href="#">Accepted</a>
+                                            <a href="#" class="more" data-bs-toggle="modal"
+                                                data-bs-target="#more-details">More Details</a>
                                         </div>
                                     </li>
                                 </ul>
@@ -847,7 +881,7 @@
                         <li><a href="#">Tips Guide</a></li>
                         <li><a href="#">Terms and Conditions</a></li>
                         <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Contact us</a></li>      
+                        <li><a href="#">Contact us</a></li>
                     </ul>
                 </div>
                 <div class="social">
@@ -864,176 +898,245 @@
     <!-- Footer end -->
 
     <!-- More details modal start -->
-    <div class="modal fade custom-modal" id="more-details" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade custom-modal" id="more-details-before" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered custom-width">
-          <div class="modal-content">
-            <div class="items">
-                <div class="item">
-                    <img src="assets/images/icon-1.svg" alt="icon">
-                    <h5>Transporter</h5>
-                    <p>Abdulrahm Aldihan</p>
-                    <div class="reviews">
-                        <i class="fas fa-star"></i>
-                        <span class="count">4.8</span>
-                        <span class="color">5 Reviews</span>
+            <div class="modal-content">
+                <div class="items">
+                    <div class="item">
+                        <img src="assets/images/icon-1.svg" alt="icon">
+                        <h5>Transporter</h5>
+                        <p>Abdulrahm Aldihan</p>
+                        <div class="reviews">
+                            <i class="fas fa-star"></i>
+                            <span class="count">4.8</span>
+                            <span class="color">5 Reviews</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/icon-2.svg" alt="icon">
+                        <h5>Price</h5>
+                        <p>2500 SAR</p>
+                        <span class="color">Door to Door</span>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/icon-3.svg" alt="icon">
+                        <h5>Pickup</h5>
+                        <p>13/10/2020,</p>
+                        <span>03:00 PM</span>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/icon-4.svg" alt="icon">
+                        <h5>Delivery</h5>
+                        <p>13/10/2020,</p>
+                        <span>03:00 PM</span>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/icon-5.svg" alt="icon">
+                        <h5>Offer Deadline</h5>
+                        <p>10 - 10 - 2020</p>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/icon-6.svg" alt="icon">
+                        <h5>Transportation Method</h5>
+                        <p>Land Transportation</p>
+                    </div>
+
+                    <div class="item w-100">
+                        <img src="assets/images/icon-7.svg" alt="icon">
+                        <h5>Notes</h5>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero</p>
                     </div>
                 </div>
-                <div class="item">
-                    <img src="assets/images/icon-2.svg" alt="icon">
-                    <h5>Price</h5>
-                    <p>2500 SAR</p>
-                    <span class="color">Door to Door</span>
-                </div>
-                <div class="item">
-                    <img src="assets/images/icon-3.svg" alt="icon">
-                    <h5>Pickup</h5>
-                    <p>13/10/2020,</p>
-                    <span>03:00 PM</span>
-                </div>
-                <div class="item">
-                    <img src="assets/images/icon-4.svg" alt="icon">
-                    <h5>Delivery</h5>
-                    <p>13/10/2020,</p>
-                    <span>03:00 PM</span>
-                </div>
-                <div class="item">
-                    <img src="assets/images/icon-5.svg" alt="icon">
-                    <h5>Offer Deadline</h5>
-                    <p>10 - 10 - 2020</p>
-                </div>
-                <div class="item">
-                    <img src="assets/images/icon-6.svg" alt="icon">
-                    <h5>Transportation Method</h5>
-                    <p>Land Transportation</p>
-                </div>
-
-                <div class="item w-100">
-                    <img src="assets/images/icon-7.svg" alt="icon">
-                    <h5>Notes</h5>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero</p>
-                </div>
-                <div class="item w-100">
-                    <img src="assets/images/icon-8.svg" alt="icon">
-                    <h5>Contact Details</h5>
-                    <p>Phone Number : +699 27762986 <br> Landline : 69564 874</p>
+                <div class="btn-area">
+                    <a href="#" class="cancel" data-bs-dismiss="modal">Cancel</a>
+                    <a class="accept" href="#">Accept Offer</a>
                 </div>
             </div>
-            <div class="btn-area">
-                <a href="#" class="cancel" data-bs-dismiss="modal">Cancel</a>
-                <a class="accept" href="#">Accept Offer</a>
-            </div>
-          </div>
         </div>
-      </div>
+    </div>
+    <!-- More details modal end -->
+
+    <!-- More details modal start -->
+    <div class="modal fade custom-modal" id="more-details" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered custom-width">
+            <div class="modal-content">
+                <div class="items">
+                    <div class="item">
+                        <img src="assets/images/icon-1.svg" alt="icon">
+                        <h5>Transporter</h5>
+                        <p>Abdulrahm Aldihan</p>
+                        <div class="reviews">
+                            <i class="fas fa-star"></i>
+                            <span class="count">4.8</span>
+                            <span class="color">5 Reviews</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/icon-2.svg" alt="icon">
+                        <h5>Price</h5>
+                        <p>2500 SAR</p>
+                        <span class="color">Door to Door</span>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/icon-3.svg" alt="icon">
+                        <h5>Pickup</h5>
+                        <p>13/10/2020,</p>
+                        <span>03:00 PM</span>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/icon-4.svg" alt="icon">
+                        <h5>Delivery</h5>
+                        <p>13/10/2020,</p>
+                        <span>03:00 PM</span>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/icon-5.svg" alt="icon">
+                        <h5>Offer Deadline</h5>
+                        <p>10 - 10 - 2020</p>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/icon-6.svg" alt="icon">
+                        <h5>Transportation Method</h5>
+                        <p>Land Transportation</p>
+                    </div>
+
+                    <div class="item w-100">
+                        <img src="assets/images/icon-7.svg" alt="icon">
+                        <h5>Notes</h5>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero</p>
+                    </div>
+                    <div class="item w-100">
+                        <img src="assets/images/icon-8.svg" alt="icon">
+                        <h5>Contact Details</h5>
+                        <p>Phone Number : +699 27762986 <br> Landline : 69564 874</p>
+                    </div>
+                </div>
+                <div class="btn-area">
+                    <a href="#" class="cancel" data-bs-dismiss="modal">Cancel</a>
+                    <a class="accept accepted" href="#">Accepted</a>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- More details modal end -->
 
     <!-- Ratting modal start -->
-    <div class="modal fade custom-modal" id="ratting-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade custom-modal" id="ratting-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered custom-width ratting-modal">
-          <div class="modal-content">
-            <h2>Rate Your Experience</h2>
-            <p>Let Us Know If You're Satisfied With Transporter</p>
-            <form>
-                <div class="ratting">
-                    <label class="active">
-                        <i class="fas fa-star"></i>
-                        <input type="radio" value="1">
-                    </label>
-                    <label class="active">
-                        <i class="fas fa-star"></i>
-                        <input type="radio" value="2">
-                    </label>
-                    <label class="active">
-                        <i class="fas fa-star"></i>
-                        <input type="radio" value="3">
-                    </label>
-                    <label class="active">
-                        <i class="fas fa-star"></i>
-                        <input type="radio" value="4">
-                    </label>
-                    <label>
-                        <i class="far fa-star"></i>
-                        <input type="radio" value="5">
-                    </label>
-                    
-                </div>
-                <textarea placeholder="Describe your experience..."></textarea>
-                <div class="ratting-btn-area">
-                    <a href="#" class="cancel" data-bs-dismiss="modal">Cancel</a>
-                    <button type="submit" class="accept" href="#">Send</button>
-                </div>
-            </form>
-          </div>
+            <div class="modal-content">
+                <h2>Rate Your Experience</h2>
+                <p>Let Us Know If You're Satisfied With Transporter</p>
+                <form>
+                    <div class="ratting">
+                        <label class="active">
+                            <i class="fas fa-star"></i>
+                            <input type="radio" value="1">
+                        </label>
+                        <label class="active">
+                            <i class="fas fa-star"></i>
+                            <input type="radio" value="2">
+                        </label>
+                        <label class="active">
+                            <i class="fas fa-star"></i>
+                            <input type="radio" value="3">
+                        </label>
+                        <label class="active">
+                            <i class="fas fa-star"></i>
+                            <input type="radio" value="4">
+                        </label>
+                        <label>
+                            <i class="far fa-star"></i>
+                            <input type="radio" value="5">
+                        </label>
+
+                    </div>
+                    <label>Tell Us More</label>
+                    <textarea placeholder="Describe your experience..."></textarea>
+                    <div class="ratting-btn-area">
+                        <a href="#" class="cancel" data-bs-dismiss="modal">Cancel</a>
+                        <button type="submit" class="accept" href="#">Send</button>
+                    </div>
+                </form>
+            </div>
         </div>
-      </div>
+    </div>
     <!-- Ratting modal end -->
 
     <!-- Cancel shipment start -->
-    <div class="modal fade custom-modal" id="cancel-shipment" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade custom-modal" id="cancel-shipment" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered custom-width cancel-shipment">
-          <div class="modal-content">
-            <img src="assets/images/sorry.svg" alt="img">
-            <h3>We are sorry to see you go without having the chance to serve you.</h3>
-            <p>Due to banks regulation the refund period to your card is 5-15 working days depending on your card issuer.</p>
-            <p class="warning">
-                <img src="assets/images/warning.svg" alt="img">
-                <span>If the shipment canceled 12 hours before the shipping, 50 SAR will be deducted.</span>
-            </p>
-            <div class="shipment-btn">
-                <a href="#"  data-bs-dismiss="modal">Don’t Cancel</a>
-                <a href="#" class="cancel" data-bs-toggle="modal" data-bs-target="#cancel-shipment-request">Cancel Shipment</a>
+            <div class="modal-content">
+                <img src="assets/images/sorry.svg" alt="img">
+                <h3>We are sorry to see you go without having the chance to serve you.</h3>
+                <p>Due to banks regulation the refund period to your card is 5-15 working days depending on your card
+                    issuer.</p>
+                <p class="warning">
+                    <img src="assets/images/warning.svg" alt="img">
+                    <span>If the shipment canceled 12 hours before the shipping, 50 SAR will be deducted.</span>
+                </p>
+                <div class="shipment-btn">
+                    <a href="#" data-bs-dismiss="modal">Don’t Cancel</a>
+                    <a href="#" class="cancel" data-bs-toggle="modal" data-bs-target="#cancel-shipment-request">Cancel
+                        Shipment</a>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+    </div>
     <!-- Cancel shipment end -->
 
     <!-- Cancel shipment request start -->
-    <div class="modal fade custom-modal" id="cancel-shipment-request" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade custom-modal" id="cancel-shipment-request" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered custom-width cancel-shipment-request">
-          <div class="modal-content">
-            <img src="assets/images/warning-tr.svg" alt="img">
-            <h3>Cancel Shipment !</h3>
-            <form>
-                <h4>Cancellation Reason</h4>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="my-group" id="one">
-                    <label class="form-check-label" for="one">
-                        Transporter doesn’t start work.
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="my-group" id="two">
-                    <label class="form-check-label" for="two">
-                        The pickup date isn’t right for me.
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="my-group" id="three">
-                    <label class="form-check-label" for="three">
-                        I won’t be exist at the pickup time
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="my-group" id="four">
-                    <label class="form-check-label" for="four">
-                        Other
-                    </label>
-                </div>
-                <div class="textarea">
-                    <label for="textarea">Tell us more</label>
-                    <textarea id="textarea" placeholder="tell us changing reason..."></textarea>
-                </div>
+            <div class="modal-content">
+                <img src="assets/images/warning-tr.svg" alt="img">
+                <h3>Cancel Shipment !</h3>
+                <form>
+                    <h4>Cancellation Reason</h4>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="my-group" id="one">
+                        <label class="form-check-label" for="one">
+                            Transporter doesn’t start work.
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="my-group" id="two">
+                        <label class="form-check-label" for="two">
+                            The pickup date isn’t right for me.
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="my-group" id="three">
+                        <label class="form-check-label" for="three">
+                            I won’t be exist at the pickup time
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="my-group" id="four">
+                        <label class="form-check-label" for="four">
+                            Other
+                        </label>
+                    </div>
+                    <div class="textarea">
+                        <label for="textarea">Tell us more</label>
+                        <textarea id="textarea" placeholder="tell us changing reason..."></textarea>
+                    </div>
 
-                <div class="shipment-request-btn">
-                    <a href="#" data-bs-dismiss="modal">Back</a>
-                    <button href="#" class="request">Request Cancel</button>
-                </div>
-            </form>
-            
-          </div>
+                    <div class="shipment-request-btn">
+                        <a href="#" data-bs-dismiss="modal">Back</a>
+                        <button href="#" class="request">Request Cancel</button>
+                    </div>
+                </form>
+
+            </div>
         </div>
-      </div>
+    </div>
     <!-- Cancel shipment request end -->
 
     <script src="assets/js/jquery.2.2.4.min.js"></script>
@@ -1041,6 +1144,7 @@
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/jquery.nice-select.min.js"></script>
     <script src="assets/js/custom.js"></script>
-    
+
 </body>
+
 </html>

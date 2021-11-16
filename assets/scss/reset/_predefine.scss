@@ -40,6 +40,11 @@ h6{
 	font-weight: 600;
 }
 
+.lang-en,
+.rtl .lang-en {
+    font-family: $bodyFont;
+}
+
 .rtl {
     h1,
     h2,
@@ -48,6 +53,7 @@ h6{
     h5,
     h6{
         font-family: $titleFontAr;
+        font-weight: normal;
     }
 }
 
