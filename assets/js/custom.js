@@ -37,9 +37,18 @@ $(document).ready(function () {
             $(this).text('Show Offers');
         }
 
-        else {
+        if(text == 'Show Offers') {
             $(this).text('Hide Offers');
         }
+
+        if(text == 'اخفاء العروض') {
+            $(this).text('عرض العروض');
+        }
+
+        if(text == 'عرض العروض') {
+            $(this).text('اخفاء العروض');
+        }
+
 
     })
 
@@ -80,5 +89,17 @@ $(document).ready(function () {
     $('.dashboard-content .tab-content .title .search form input').on('blur', function () {
         $(this).parents('form').removeClass('active');
     })
+
+
+    // checkout details;
+    if($('.details-collapse').length > 0) {
+        $('.invoice-details input').on('click', function() {
+            if($(this).val() == 1 ) {
+                $('.details-collapse').slideUp();
+            } else {
+                $('.details-collapse').slideDown();
+            }
+        })
+    }
 
 });

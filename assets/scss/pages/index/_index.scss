@@ -27,14 +27,29 @@
 
     .nav-tabs {
         border-bottom: 1px solid #E5E5EA;
+
+        .nav-item {
+            width: calc(100% / 6);
+
+            @media (max-width: 992px) {
+                width: calc(25%);
+            }
+
+            @media (max-width: 575px) {
+                width: calc(100% / 3);
+            }
+        }
         
         .nav-link {
-            width: 168px;
+            display: block;
+            width: 100%;
             height: 46px;
             position: relative;
             font-size: 16px;
             color: #8E8E93;
             border-bottom: 1px solid #E5E5EA;
+            padding: 0;
+            white-space: nowrap;
 
             &::after {
                 content: '';
@@ -511,7 +526,7 @@
                                     color: $white;
 
                                     &.accepted {
-                                        opacity: .6;
+                                        background-color: #9bebc4 !important;
                                         pointer-events: none;
                                     }
                                 }
@@ -523,11 +538,11 @@
                             }
 
                             @media (max-width: 767.98px) {
-                                flex-direction: column;
+                                flex-direction: column !important;
 
                                 a {
                                     width: 100%;
-                                    margin: 0 0 10px;
+                                    margin: 0 0 10px !important;
                                 }
                                 
                             }
@@ -537,6 +552,17 @@
             }
         }
     }
+}
+
+.rtl {
+    .dashboard-content .tab-content .content .top .btn-area a.hide-offer,
+    .dashboard-content .tab-content .content .list ul li .btn-area a.accept,
+    .cancel-shipment .modal-content .shipment-btn a.cancel,
+    .cancel-shipment-request .modal-content form .shipment-request-btn button.request,
+    .custom-modal .modal-content .btn-area a.accept {
+        font-family: $titleFontAr !important;
+    }
+    
 }
 
 .rtl {
@@ -823,7 +849,7 @@
                     color: $white;
 
                     &.accepted {
-                        opacity: .6;
+                        background-color: #9bebc4 !important;
                         pointer-events: none;
                     }
                 }
@@ -835,7 +861,7 @@
             }
 
             @media (max-width: 767.98px) {
-                flex-direction: column-reverse;
+                flex-direction: column-reverse !important;
 
                 a {
                     width: 100%;
@@ -970,9 +996,10 @@
         }
 
         @media (max-width: 767.98px) {
-            flex-direction: column;
+            flex-direction: column-reverse;
 
-            a {
+            a,
+            button {
                 width: 100%;
                 margin: 0 0 10px;
             }
@@ -997,9 +1024,10 @@
             }
     
             @media (max-width: 767.98px) {
-                flex-direction: column;
+                flex-direction: column-reverse;
     
-                a {
+                a,
+                button {
                     width: 100%;
                     margin: 0 0 10px;
                 }
@@ -1075,7 +1103,7 @@
             }
 
             @media (max-width: 767.98px) {
-                flex-direction: column;
+                flex-direction: column-reverse !important;
 
                 a {
                     width: 100%;
@@ -1213,9 +1241,10 @@
                 }
 
                 @media (max-width: 767.98px) {
-                    flex-direction: column;
+                    flex-direction: column-reverse;
     
-                    a {
+                    a,
+                    button {
                         width: 100%;
                         margin: 0 0 10px;
                     }
@@ -1250,9 +1279,10 @@
                     }
     
                     @media (max-width: 767.98px) {
-                        flex-direction: column;
+                        flex-direction: column-reverse;
         
-                        a {
+                        a,
+                        button {
                             width: 100%;
                             margin: 0 0 10px;
                         }

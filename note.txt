@@ -1,0 +1,10 @@
+header edit
+
+https://divinecoder.com/html/fleeti/admin/
+https://divinecoder.com/html/fleeti/admin/index-ar.html
+
+https://divinecoder.com/html/fleeti/admin/checkout.html
+https://divinecoder.com/html/fleeti/admin/checkout-ar.html
+
+https://divinecoder.com/html/fleeti/admin/invoice.html
+https://divinecoder.com/html/fleeti/admin/invoice-ar.html

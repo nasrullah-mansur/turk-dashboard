@@ -34,7 +34,7 @@
                 <div class="order-btn">
                     <a href="#">
                         <img src="assets/images/my-order.svg" alt="my-order">
-                        <span>لوحة التحكم</span>
+                        <span>طلباتي</span>
                     </a>
                 </div>
                 <div class="flag">
@@ -49,7 +49,7 @@
                         <img src="assets/images/notification.svg" alt="notification">
                         <div class="notification-area">
                             <div class="triangle"></div>
-                            <h4>Notifications</h4>
+                            <h4>الاشعارات</h4>
                             <ul>
                                 <li><a href="#">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</a></li>
                                 <li><a href="#">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</a></li>
@@ -61,8 +61,8 @@
                         <div class="user-dropdown">
                             <div class="triangle"></div>
                             <ul>
-                                <li><a href="#">View Profile</a></li>
-                                <li><a href="#">Log Out</a></li>
+                                <li><a href="#">حسابي</a></li>
+                                <li><a href="#">تسجيل الخروج</a></li>
                             </ul>
                         </div>
                     </div>
@@ -79,28 +79,35 @@
                             <li>
                                 <a href="#">
                                     <img src="assets/images/mobile-icon-1.svg" alt="icon">
-                                    <span>My Dashboard</span>
+                                    <span>طلباتي</span>
                                     <i class="las la-angle-right"></i>
                                 </a>
                             </li>
                             <li>
                                 <a href="#" class="notification-toggler">
                                     <img src="assets/images/mobile-icon-2.svg" alt="icon">
-                                    <span>Notifications</span>
+                                    <span>الاشعارات</span>
                                     <i class="las la-angle-right"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="#" class="profile-toggler">
                                     <img src="assets/images/mobile-icon-3.svg" alt="icon">
-                                    <span>My Profile</span>
+                                    <span>حسابي</span>
                                     <i class="las la-angle-right"></i>
                                 </a>
                             </li>
                         </ul>
 
+                        <div class="profile">
+                            <ul>
+                                <li><a href="#">حسابي</a></li>
+                                <li><a href="#">تسجيل الخروج</a></li>
+                            </ul>
+                        </div>
+
                         <div class="notification">
-                            <h3>Notifications</h3>
+                            <h3>الاشعارات</h3>
                             <ul>
                                 <li><a href="#">Lorem Ipsum Dolor Sit Amet, Conse, tetur Eirmod Tempor</a></li>
                                 <li><a href="#">Lorem Ipsum Dolor Sit Amet, Conse, tetur Eirmod Tempor</a></li>
@@ -121,37 +128,43 @@
                     <div class="left-side">
                         <h2>تفاصيل الفاتورة</h2>
                         <form>
-                            <div class="radios">
+                            <div class="radios invoice-details">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="choose" id="as-in">
+                                    <input checked value="1" class="form-check-input" type="radio" name="choose" id="as-in">
                                     <label class="form-check-label" for="as-in">
                                         كما في تفاصيل الحساب
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="choose" id="other">
+                                    <input value="2" class="form-check-input" type="radio" name="choose" id="other">
                                     <label class="form-check-label" for="other">
                                         اخرى
                                     </label>
                                 </div>
                             </div>
-                            <div class="input-area">
-                                <label for="f-name" class="form-label">الاسم</label>
-                                <input type="text" class="form-control" id="f-name" placeholder="الاسم">
-                            </div>
-                            <div class="input-area">
-                                <i class="fas fa-sort-down"></i>
-                                <label class="form-label">الدولة</label>
-                                <select class="nice-select wide">
-                                    <option selected>المملكة العربية السعودية</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                  </select>
-                            </div>
-                            <div class="input-area mt-15">
-                                <label for="email" class="form-label">العنوان</label>
-                                <input type="text" class="form-control" id="email" placeholder="King Abdulalah Street, Al Tubayshi">
+                            <div class="details-collapse">
+                                <div class="input-area">
+                                    <label for="f-name" class="form-label">الاسم الاول</label>
+                                    <input type="text" class="form-control" id="f-name" placeholder="اسم العائلة">
+                                </div>
+                                <div class="input-area">
+                                    <label for="l-name" class="form-label">اسم الاخير</label>
+                                    <input type="text" class="form-control" id="l-name" placeholder="اسم العائلة">
+                                </div>
+                                <div class="input-area">
+                                    <i class="fas fa-sort-down"></i>
+                                    <label class="form-label">الدولة</label>
+                                    <select class="nice-select wide">
+                                        <option selected>المملكة العربية السعودية</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                      </select>
+                                </div>
+                                <div class="input-area mt-15">
+                                    <label for="email" class="form-label">العنوان</label>
+                                    <input type="text" class="form-control" id="email" placeholder="King Abdulalah Street, Al Tubayshi">
+                                </div>
                             </div>
                             <div class="details">
                                 <h2>تفاصيل الدفع</h2>
@@ -287,11 +300,11 @@
                 </div>
                 <div class="menu d-none d-md-block">
                     <ul>
-                        <li><a href="#">Who are we</a></li>
-                        <li><a href="#">Tips Guide</a></li>
-                        <li><a href="#">Terms and Conditions</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Contact us</a></li>      
+                        <li><a href="#">عن فليتي</a></li>
+                        <li><a href="#">النصائح</a></li>
+                        <li><a href="#">الشروط و الاحكام</a></li>
+                        <li><a href="#">سياسة الاستخدام</a></li>
+                        <li><a href="#">تواصل معنا</a></li>      
                     </ul>
                 </div>
                 <div class="social">
